@@ -3,157 +3,81 @@ layout: default
 ---
 
 <!-- Hero Section -->
+<section class="hero-section">
+    <!-- Decorative elements -->
+    <div class="hero-decoration hero-decoration-1"></div>
+    <div class="hero-decoration hero-decoration-2"></div>
 
-<section class="bg-darkPurple p-6 py-16 pb-28">
-    <div class="container mx-auto">
-        <div class="flex flex-col md:justify-between items-center md:flex-row text-white space-y-8 md:space-y-0">
-            <div class="w-full">
-                <img src="{{'/assets/img/rsz_drawkit_vector_illustration_team_work_11.png' | relative_url}}" class="w-full" alt="hero image">
+    <div class="container-custom hero-content">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem; text-align: center;">
+            <div style="max-width: 800px;">
+                <h1 class="hero-title fade-in-up">Information System Security Research</h1>
+                <p class="hero-subtitle fade-in-up fade-in-up-delay-1" style="margin: 0 auto 2rem;">{{ page.subtitle }}</p>
+                <a href="#about" class="hero-cta fade-in-up fade-in-up-delay-2">Learn More</a>
             </div>
-            <div class="flex flex-col text-center md:text-left space-y-3 md:space-y-8">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl">Independent Security Research</h1>
-                <p class="text-xl  text-gray">Advancing the understanding of information security threats through rigorous research and collaborative knowledge sharing.</p>
-                <div>
-                    <a href="{{'/#about' | relative_url}}">
-                        <button class="md:text-left bg-themeGreen hover:opacity-90 rounded-sm hover:text-white transition-all px-6 py-3 hover:shadow-md">LEARN MORE</button>
-                    </a>
-                </div>
+            <div class="fade-in-up fade-in-up-delay-3" style="max-width: 500px; width: 100%;">
+                <img src="{{'/assets/img/rsz_drawkit_vector_illustration_team_work_11.png' | relative_url}}" style="width: 100%;" alt="Security research team">
             </div>
         </div>
+    </div>
+
+    <!-- Animated SVG Wave -->
+    <div class="wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="wave-layer-1" d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z"/>
+            <path class="wave-layer-2" d="M0,80 C200,40 400,100 600,60 C800,20 1000,90 1200,50 L1200,120 L0,120 Z"/>
+            <path class="wave-layer-3" d="M0,90 C300,60 500,110 700,70 C900,30 1100,80 1200,70 L1200,120 L0,120 Z"/>
+            <path class="wave-layer-4" d="M0,100 C200,85 400,110 600,95 C800,80 1000,105 1200,90 L1200,120 L0,120 Z"/>
+        </svg>
     </div>
 </section>
 
 <!-- Services Section -->
-
-<section class="bg-themeGreen py-10 px-6" id="services">
-    <div class="container mx-auto">
-        <div class="flex flex-col space-y-10">
-            <div class="text-white text-center space-y-3 mx-5">
-                <!-- h2 class="lg:text-2xl text-xl font-bold">Our Services</h2-->
-                <h1 class="lg:text-4xl text-2xl">Our Approach to Security Research</h1>
+<section class="services-section" id="services">
+    <h2 class="services-title">What We Do</h2>
+    <div class="services-grid">
+        {% for service in page.services %}
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid {{ service.icon }}"></i>
             </div>
-            <!-- Services -->
-            <div class="grid grid-cols-1 md:grid-cols-3 items-center text-center gap-4 px-5">
-                {% for service in page.services %}
-                <div class="bg-white px-10 py-8 shadow-xl space-y-2">
-                    <div class="font-bold text-2xl">
-                        {{service.title}}
-                    </div>
-                    <div class="text-lg">
-                        {{service.description}}
-                    </div>
-                    <a href="{{'/#about' | relative_url}}">
-                        <button class="px-4 py-2 bg-darkPurple text-white rounded-md hover:opacity-90">Learn More</button>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
+            <div class="service-card-title">{{ service.title }}</div>
+            <div class="service-card-desc">{{ service.description }}</div>
+            <a href="#about" class="service-card-link">Learn More</a>
         </div>
-    </div>
-</section>
-
-<!-- Stats Section -->
-
-<section class="bg-cinereous p-6 pb-20">
-    <div class="container mx-auto space-y-9">
-        <div class="flex flex-col space-y-6 items-center border-b-2 border-white">
-            <div class="flex flex-col lg:flex-row justify-center md:justify-between">
-                <div class="w-full lg:w-1/2 py-8 md:py-14 space-y-7 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl text-white">What Guides Us</h1>
-                    <p class="text-xl text-lightGray lg:max-w-md max-w-full mb-5">Our work is shaped by core principles that inform how we approach security research and engage with the broader community.</p>
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <img src="{{'/assets/img/DrawKit Vector Illustration Team Work (7).png' | relative_url}}" alt="Stats image" class="w-full rounded-md pt-0 lg:pt-10">
-                </div>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 space-y-10 sm:space-y-2 lg:space-y-0 border-b-2 border-white pb-8">
-            {% for stat in page.stats %}
-            <div class="flex flex-col justify-center items-center text-black rounded-md">
-                <div class="text-3xl font-bold text-white mx-16 text-center">{{stat.value}}</div>
-                <div class="xl:text-lg lg:text-xl md:text-2xl sm:text-2xl text-3xl font-bold mx-16 text-center text-lightGray">{{stat.title}}</div>
-            </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
     </div>
 </section>
 
 <!-- About Section -->
-
-<section class="p-10" id="about">
-    <div class="container mx-auto space-y-9">
-        <!-- Testimonials -->
-        <!-- <div class="container mx-auto pt-12 border-b-2 border-black pb-12">
-            <h1 class="sm:text-xl text-lg text-center text-themeGreen">What Our Customers Say About Us</h1>
-            <h1 class="sm:text-4xl text-xl text-center">Testimonials</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 items-center text-center gap-4 px-5 pt-6">
-                {% for item in page.testimonials %}
-                <div class="bg-white px-10 py-8 border border-themeGreen text-center md:text-left group">
-                    <div>
-                        <i class="fa-solid fa-user text-4xl font-bold transition-all border border-black rounded-full px-2 py-2 group-hover:bg-black group-hover:text-white"></i>
-                        <div class="font-bold text-lg">{{item.title}}</div>
-                        <div class="font-bold text-lg">{{item.comment}}</div>
-                        <div class="text-themeGreen">{{item.client}}</div>
-                    </div>
-                </div>
-                {% endfor %}
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-image about-image-responsive">
+            <img src="{{'/assets/img/DrawKit Vector Illustration Team Work (18).png' | relative_url}}" alt="About us">
+        </div>
+        <div class="about-content about-content-responsive">
+            <div class="about-label">About Us</div>
+            <h2 class="about-heading">Why We Are Different</h2>
+            <p class="about-text">{{ page.about }}</p>
+            <div class="about-buttons about-buttons-responsive">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="mailto:{{ site.email }}" class="btn-secondary">Email Us</a>
             </div>
         </div>
-        <!-- About -->
-        <div class="flex flex-col-reverse md:flex-row border-b-2 border-black pb-5">
-            <div class="hidden md:block md:w-1/3">
-                <img src="{{'/assets/img/DrawKit Vector Illustration Team Work (18).png' | relative_url}}" alt="" class="">
-            </div>
-            <div class="text-center w-full md:w-2/3 md:text-left space-y-3 px-5">
-                <h1 class="text-themeGreen font-bold text-lg">About Us</h1>
-                <h1 class="text-3xl">Why We Are Different</h1>
-                <p class="text-gray text-base">{{ page.about }}</p>
-                <div class="flex flex-col md:flex-row md:space-x-3 space-y-4 md:space-y-0 max-w-xs md:max-w-full mx-auto md:mx-0">
-                    <a href="{{'/#contact' | relative_url}}" class="rounded-full px-6 py-3 bg-darkPurple hover:opacity-90 text-white transition-all">
-                        GET IN TOUCH
-                    </a>
-                    <a href="mailto:{{site.email}}" class="rounded-full px-6 py-3 bg-themeGreen hover:opacity-90 text-white transition-all" >EMAIL US</a>
-                </div>
-            </div>
-        </div>
-        <!-- Posts -->
-        <!-- Commented out blog section -->
-        <!-- <div class="flex flex-col p-8 gap-10 border-b-2 border-black">
-            <div class="space-y-1 py-3">
-                <h1 class="text-themeGreen text-2xl">Blog</h1>
-                <p class="text-gray text-xl">Learn more about what we do</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                {% for post in site.posts %}
-                <a href="{{ post.url | relative_url}}" class="cursor-pointer bg-lightGray px-7 py-10 rounded-md hover:shadow-xl transition-all lg:space-y-0 md:space-y-2">
-                    <i class="fa-solid fa-book text-2xl font-bold"></i>
-                    <div class="font-bold text-lg">{{post.title}}</div>
-                    <div class="font-bold text-lg">{{post.date | date: '%B %d, %Y'}}</div>
-                </a>
-                {% endfor %}
-            </div>
-        </div> -->
-
     </div>
 </section>
 
-
 <!-- Contact Section -->
-
-<section class="bg-darkPurple text-white p-10" id="contact">
-    <div class="container mx-auto">
-        <div class="flex flex-col justify-center items-center text-center py-10">
-            <div class="text-4xl mb-10">Get in Touch</div>
-            <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12 items-center">
-                <div class="space-y-2">
-                    <a href="tel:{{site.phone}}" class="fa-solid fa-phone text-4xl hover:text-themeGreen"></a>
-                    <div>{{ site.phone }}</div>
-                </div>
-                <div class="space-y-2">
-                    <a href="mailto:{{site.email}}" class="fa-solid fa-envelope text-4xl hover:text-themeGreen"></a>
-                    <div>{{ site.email }}</div>
-                </div>
+<section class="contact-section" id="contact">
+    <h2 class="contact-heading">Let's Talk</h2>
+    <p class="contact-subheading">You know your systems need attention. Let's figure out where to start.</p>
+    <div class="contact-cards">
+        <a href="mailto:{{ site.email }}" class="contact-card">
+            <div class="contact-card-icon">
+                <i class="fa-solid fa-envelope"></i>
             </div>
-        </div>
+            <div class="contact-card-title">Email Us</div>
+            <div class="contact-card-value">{{ site.email }}</div>
+        </a>
     </div>
 </section>
