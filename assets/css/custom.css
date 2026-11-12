@@ -751,6 +751,13 @@ body.menu-open .site-header {
   letter-spacing: 0.04em;
 }
 
+.footer-dba {
+  margin-top: 0.45rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
 @media (min-width: 768px) {
   .footer-grid {
     grid-template-columns: 1.4fr 1fr 1fr;
