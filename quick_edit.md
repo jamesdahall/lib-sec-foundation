@@ -6,40 +6,43 @@
 LibertyInfoSec Federal
 
 ## SITE DESCRIPTION
-Solving security problems at the information system level.
+Free your data with real security. LibertyInfoSec Federal is your partner for solving real cybersecurity challenges in the federal space.
 
 ## EMAIL
 hello@libertyinfosec.com
 
 ## HERO HEADLINE
-Information System Security Research
+Free your data with real security
+
+## HERO LEDE
+LibertyInfoSec Federal is your partner for solving real cybersecurity challenges in the federal space.
 
 ## HERO SUBTITLE
-We help Federal agencies understand what their systems are actually doing, find where they're exposed, and fix it - before, during, and after deployment.
+We write custom code, apply AI, and run deep data analysis against the platforms you already operate — so agencies can use their data without giving up control of it.
 
-## SERVICE 1 TITLE
-Build
+## CAPABILITY 1 TITLE
+Custom Code
 
-## SERVICE 1 DESCRIPTION
-We work with your teams to build new solutions. Understanding the intent of the system, and balancing the business needs the system solves with the risks the builders likely did not intend to introduce, we proactively modify the course of development to prevent or mitigate vulnerabilities as the project progresses.
+## CAPABILITY 1 DESCRIPTION
+Off-the-shelf detections miss how federal systems actually work. We write parsers, integrations, and detection logic tailored to your mission data — then leave you with code your team can own and extend.
 
-## SERVICE 2 TITLE
-Evaluate
+## CAPABILITY 2 TITLE
+Applied AI
 
-## SERVICE 2 DESCRIPTION
-Is your system already live? By definition most important information systems that are. Bring our team in for a retroactive analysis. We go beyond scanning. Our purple team approach tests your defenses collaboratively, working with your developers and security teams in the language they speak.
+## CAPABILITY 2 DESCRIPTION
+AI that reads telemetry, not a chatbot on a slide. We train and tune models against your traffic, logs, and events to surface threats that signature-based tools never see.
 
-## SERVICE 3 TITLE
-Remediate
+## CAPABILITY 3 TITLE
+Deep Data Analysis
 
-## SERVICE 3 DESCRIPTION
-A finding without a fix is just a line item in a report nobody reads. We stay in the fight after the assessment - working with your engineers to remediate what we found, verify the fix actually works, and make sure it doesn't break what the system was built to do.
+## CAPABILITY 3 DESCRIPTION
+Volume is not visibility. We correlate across sources, reconstruct attacker paths, and prove what happened — so decisions are made on evidence, not on a dashboard nobody trusts.
 
 ## ABOUT US TEXT
-LibertyInfoSec Federal exists because most security firms talk about systems they've never had to operate. We've been on the other side. We've built Federal information systems, defended them, and watched them get audited. That experience shapes how we work - we understand that security doesn't happen in a vacuum. Every system exists to serve a mission, and our job is to make it serve that mission securely. We embed with your teams, speak your language, and focus on outcomes that survive the next audit and the next adversary.
+LibertyInfoSec Federal exists because most security firms talk about systems they have never had to operate. We have been on the other side. We have built federal information systems, defended them, and watched them get audited. That experience shapes how we work — security does not happen in a vacuum, and locking data down until nobody can use it is not security either. We embed with your teams, speak your language, and focus on outcomes that survive the next audit and the next adversary.
 
 ## CONTACT HEADING
-Let's Talk
+Let's put your data to work
 
 ## CONTACT SUBHEADING
-You know your systems need attention. Let's figure out where to start.
+If the mission needs the data and the adversary wants it too, talk to us.

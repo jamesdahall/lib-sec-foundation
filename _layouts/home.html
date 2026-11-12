@@ -2,82 +2,100 @@
 layout: default
 ---
 
-<!-- Hero Section -->
-<section class="hero-section">
-    <!-- Decorative elements -->
-    <div class="hero-decoration hero-decoration-1"></div>
-    <div class="hero-decoration hero-decoration-2"></div>
-
-    <div class="container-custom hero-content">
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem; text-align: center;">
-            <div style="max-width: 800px;">
-                <h1 class="hero-title fade-in-up">Information System Security Research</h1>
-                <p class="hero-subtitle fade-in-up fade-in-up-delay-1" style="margin: 0 auto 2rem;">{{ page.subtitle }}</p>
-                <a href="#about" class="hero-cta fade-in-up fade-in-up-delay-2">Learn More</a>
-            </div>
-            <div class="fade-in-up fade-in-up-delay-3" style="max-width: 500px; width: 100%;">
-                <img src="{{'/assets/img/rsz_drawkit_vector_illustration_team_work_11.png' | relative_url}}" style="width: 100%;" alt="Security research team">
-            </div>
+<section class="hero" aria-label="Introduction">
+    <div class="hero-media" aria-hidden="true">
+        <img src="{{ '/assets/img/hero-liberty.jpg' | relative_url }}" alt="" class="hero-image">
+        <div class="hero-veil"></div>
+        <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+        <p class="eyebrow">Federal cybersecurity partner</p>
+        <h1 class="hero-title">Free your data <span>with real security</span></h1>
+        <p class="hero-lede">{{ page.lede }}</p>
+        <p class="hero-sub">{{ page.subtitle }}</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn btn-fill">Talk with us</a>
+            <a href="#platforms" class="btn btn-ghost">Reference implementations</a>
         </div>
     </div>
-
-    <!-- Animated SVG Wave -->
-    <div class="wave-container">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="wave-layer-1" d="M0,60 C150,100 350,0 600,60 C850,120 1050,20 1200,60 L1200,120 L0,120 Z"/>
-            <path class="wave-layer-2" d="M0,80 C200,40 400,100 600,60 C800,20 1000,90 1200,50 L1200,120 L0,120 Z"/>
-            <path class="wave-layer-3" d="M0,90 C300,60 500,110 700,70 C900,30 1100,80 1200,70 L1200,120 L0,120 Z"/>
-            <path class="wave-layer-4" d="M0,100 C200,85 400,110 600,95 C800,80 1000,105 1200,90 L1200,120 L0,120 Z"/>
-        </svg>
+    <div class="hero-rail" aria-hidden="true">
+        <span>Splunk</span>
+        <span>Elastic</span>
+        <span>Cisco</span>
+        <span>Palo Alto</span>
+        <span>F5</span>
+        <span>Custom UI</span>
     </div>
 </section>
 
-<!-- Services Section -->
-<section class="services-section" id="services">
-    <h2 class="services-title">What We Do</h2>
-    <div class="services-grid">
-        {% for service in page.services %}
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fa-solid {{ service.icon }}"></i>
+<section class="section capabilities" id="capabilities">
+    <div class="section-head">
+        <p class="eyebrow">What we bring</p>
+        <h2 class="section-title">Custom code. Applied AI. Deep analysis.</h2>
+        <p class="section-dek">Threat detection in the federal space is not a license key. It is engineering against the data you already have, on the systems you already run.</p>
+    </div>
+    <div class="capability-grid">
+        {% for item in page.capabilities %}
+        <article class="capability-card">
+            <div class="capability-meta">
+                <span class="capability-num">{{ item.number }}</span>
+                <i class="fa-solid {{ item.icon }}" aria-hidden="true"></i>
             </div>
-            <div class="service-card-title">{{ service.title }}</div>
-            <div class="service-card-desc">{{ service.description }}</div>
-            <a href="#about" class="service-card-link">Learn More</a>
-        </div>
+            <h3 class="capability-title">{{ item.title }}</h3>
+            <p class="capability-copy">{{ item.description }}</p>
+        </article>
         {% endfor %}
     </div>
 </section>
 
-<!-- About Section -->
-<section class="about-section" id="about">
-    <div class="about-container">
-        <div class="about-image about-image-responsive">
-            <img src="{{'/assets/img/DrawKit Vector Illustration Team Work (18).png' | relative_url}}" alt="About us">
-        </div>
-        <div class="about-content about-content-responsive">
-            <div class="about-label">About Us</div>
-            <h2 class="about-heading">Why We Are Different</h2>
+<section class="section platforms" id="platforms">
+    <div class="section-head">
+        <p class="eyebrow">Reference implementations</p>
+        <h2 class="section-title">We meet you on the stack you already operate.</h2>
+        <p class="section-dek">Splunk, Elastic, Cisco, Palo Alto, F5, and custom operator UIs are the baselines. We extend them with detections, analytics, and interfaces that vendors do not ship.</p>
+    </div>
+    <div class="platform-grid">
+        {% for platform in page.platforms %}
+        <article class="platform-card">
+            <div class="platform-mark" aria-hidden="true">{{ platform.mark }}</div>
+            <div class="platform-body">
+                <h3 class="platform-name">{{ platform.name }}</h3>
+                <p class="platform-role">{{ platform.role }}</p>
+                <p class="platform-copy">{{ platform.description }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="about-grid">
+        <figure class="about-figure">
+            <img src="{{ '/assets/img/liberty-portrait.jpg' | relative_url }}" alt="Statue of Liberty in bronze, lit with a green rim light">
+        </figure>
+        <div class="about-copy">
+            <p class="eyebrow">About us</p>
+            <h2 class="section-title">A partner, not a product.</h2>
             <p class="about-text">{{ page.about }}</p>
-            <div class="about-buttons about-buttons-responsive">
-                <a href="#contact" class="btn-primary">Get In Touch</a>
-                <a href="mailto:{{ site.email }}" class="btn-secondary">Email Us</a>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-fill">Get in touch</a>
+                <a href="mailto:{{ site.email }}" class="btn btn-ghost">Email us</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <h2 class="contact-heading">Let's Talk</h2>
-    <p class="contact-subheading">You know your systems need attention. Let's figure out where to start.</p>
-    <div class="contact-cards">
+<section class="section contact" id="contact">
+    <div class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's put your data to work.</h2>
+        <p class="section-dek">If the mission needs the data and the adversary wants it too, talk to us.</p>
         <a href="mailto:{{ site.email }}" class="contact-card">
-            <div class="contact-card-icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-card-title">Email Us</div>
-            <div class="contact-card-value">{{ site.email }}</div>
+            <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+            <span>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">{{ site.email }}</span>
+            </span>
         </a>
     </div>
 </section>
