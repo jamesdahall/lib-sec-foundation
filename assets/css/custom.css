@@ -644,8 +644,14 @@ body.menu-open .site-header {
   border-top: 1px solid var(--line);
 }
 
-.contact-card {
+.contact-row {
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.contact-card {
   display: inline-flex;
   align-items: center;
   gap: 1rem;

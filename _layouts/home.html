@@ -85,12 +85,21 @@ layout: default
         <p class="eyebrow">Contact</p>
         <h2 class="section-title">Let's put your data to work.</h2>
         <p class="section-dek">If the mission needs the data and the adversary wants it too, talk to us.</p>
-        <a href="mailto:{{ site.email }}" class="contact-card">
-            <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
-            <span>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">{{ site.email }}</span>
-            </span>
-        </a>
+        <div class="contact-row">
+            <a href="mailto:{{ site.email }}" class="contact-card">
+                <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+                <span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">{{ site.email }}</span>
+                </span>
+            </a>
+            <a href="tel:+{{ site.phone }}" class="contact-card">
+                <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                <span>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">{{ site.phone_display }}</span>
+                </span>
+            </a>
+        </div>
     </div>
 </section>

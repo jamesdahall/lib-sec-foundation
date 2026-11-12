@@ -11,6 +11,9 @@ Free your data with real security. LibertyInfoSec Federal is your partner for so
 ## EMAIL
 hello@libertyinfosec.com
 
+## PHONE
+1 (866) 929-1337
+
 ## HERO HEADLINE
 Free your data with real security
 
