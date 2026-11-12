@@ -749,13 +749,15 @@ body.menu-open .site-header {
   font-size: 0.8rem;
   font-family: var(--mono);
   letter-spacing: 0.04em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
 }
 
-.footer-dba {
-  margin-top: 0.45rem;
-  font-size: 0.68rem;
-  letter-spacing: 0.02em;
-  color: var(--muted);
+.footer-copyright span:last-child {
+  margin-left: auto;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
