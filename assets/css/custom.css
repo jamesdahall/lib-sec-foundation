@@ -414,18 +414,11 @@ body.menu-open .site-header {
 }
 
 .hero-lede {
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
   max-width: 36rem;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 500;
   line-height: 1.45;
-}
-
-.hero-sub {
-  margin: 0 0 2rem;
-  max-width: 36rem;
-  color: var(--muted);
-  font-size: 1.05rem;
 }
 
 .hero-rail {
@@ -806,8 +799,7 @@ body.menu-open .site-header {
     max-width: none;
     font-size: clamp(2rem, 11.5vw, 2.55rem);
   }
-  .hero-lede,
-  .hero-sub {
+  .hero-lede {
     max-width: none;
   }
   .hero-actions {

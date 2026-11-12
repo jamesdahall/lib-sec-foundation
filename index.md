@@ -4,7 +4,6 @@ css: home
 title: LibertyInfoSec Federal
 headline: Free your data with real security
 lede: LibertyInfoSec Federal is your partner for solving real cybersecurity challenges in the federal space.
-subtitle: We write custom code, apply AI, and run deep data analysis against the platforms you already operate — so agencies can use their data without giving up control of it.
 
 capabilities:
   - number: "01"

@@ -17,9 +17,6 @@ Free your data with real security
 ## HERO LEDE
 LibertyInfoSec Federal is your partner for solving real cybersecurity challenges in the federal space.
 
-## HERO SUBTITLE
-We write custom code, apply AI, and run deep data analysis against the platforms you already operate — so agencies can use their data without giving up control of it.
-
 ## CAPABILITY 1 TITLE
 Custom Code
 
