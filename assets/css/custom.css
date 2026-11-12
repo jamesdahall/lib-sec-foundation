@@ -414,7 +414,7 @@ body.menu-open .site-header {
 }
 
 .hero-lede {
-  margin: 0 0 2rem;
+  margin: 0 0 4rem;
   max-width: 36rem;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-weight: 500;
