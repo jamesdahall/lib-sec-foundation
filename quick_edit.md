@@ -21,7 +21,7 @@ LibertyInfoSec Federal is your partner for solving real cybersecurity challenges
 Custom Code
 
 ## CAPABILITY 1 DESCRIPTION
-Off-the-shelf detections miss how federal systems actually work. We write parsers, integrations, and detection logic tailored to your mission data — then leave you with code your team can own and extend.
+Off-the-shelf detections miss how federal systems actually work. We write parsers, integrations, and detection logic tailored to your mission data, then leave you with code your team can own and extend.
 
 ## CAPABILITY 2 TITLE
 Applied AI
@@ -33,10 +33,10 @@ AI that reads telemetry, not a chatbot on a slide. We train and tune models agai
 Deep Data Analysis
 
 ## CAPABILITY 3 DESCRIPTION
-Volume is not visibility. We correlate across sources, reconstruct attacker paths, and prove what happened — so decisions are made on evidence, not on a dashboard nobody trusts.
+Volume is not visibility. We correlate across sources, reconstruct attacker paths, and prove what happened, so decisions are made on evidence, not on a dashboard nobody trusts.
 
 ## ABOUT US TEXT
-LibertyInfoSec Federal exists because most security firms talk about systems they have never had to operate. We have been on the other side. We have built federal information systems, defended them, and watched them get audited. That experience shapes how we work — security does not happen in a vacuum, and locking data down until nobody can use it is not security either. We embed with your teams, speak your language, and focus on outcomes that survive the next audit and the next adversary.
+LibertyInfoSec Federal exists because most security firms talk about systems they have never had to operate. We have been on the other side. We have built federal information systems, defended them, and watched them get audited. That experience shapes how we work. Security does not happen in a vacuum, and locking data down until nobody can use it is not security either. We embed with your teams, speak your language, and focus on outcomes that survive the next audit and the next adversary.
 
 ## CONTACT HEADING
 Let's put your data to work
