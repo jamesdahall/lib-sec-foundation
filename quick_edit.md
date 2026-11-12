@@ -27,7 +27,7 @@ Off-the-shelf detections miss how federal systems actually work. We write parser
 Applied AI
 
 ## CAPABILITY 2 DESCRIPTION
-AI that reads telemetry, not a chatbot on a slide. We train and tune models against your traffic, logs, and events to surface threats that signature-based tools never see.
+We deploy private, secure AI on infrastructure you control. OpenCode, Open WebUI, AWS Bedrock, SGLang, vLLM, and Ollama, wired so models and data stay inside the boundary.
 
 ## CAPABILITY 3 TITLE
 Deep Data Analysis

@@ -13,7 +13,7 @@ capabilities:
   - number: "02"
     title: Applied AI
     icon: fa-brain
-    description: "AI that reads telemetry, not a chatbot on a slide. We train and tune models against your traffic, logs, and events to surface threats that signature-based tools never see."
+    description: "We deploy private, secure AI on infrastructure you control. OpenCode, Open WebUI, AWS Bedrock, SGLang, vLLM, and Ollama, wired so models and data stay inside the boundary."
   - number: "03"
     title: Deep Data Analysis
     icon: fa-diagram-project
